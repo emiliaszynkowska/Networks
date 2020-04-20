@@ -1,0 +1,19 @@
+9000 1586642171848 [P6000] connection established to port 5000
+9000 1586642174657 [C] started listening on port 5000
+9000 1586642179008 [C] started listening on port 5000
+9000 1586642180408 [P6000] started listening on port 6000
+9000 1586642181437 [P6000] received participant ports: 6000, 7000, 8000
+9000 1586642182439 [C] accepted connection from port 6000
+9000 1586642183470 [P6000] received vote options: A, B, C
+9000 1586642186492 [P7000] votes sent to 6000: <7000, B>
+9000 1586642190485 [P7000] votes sent to 6000: <7000, B>
+9000 1586642192477 [P6000] end round 1
+9000 1586642196569 [P6000] votes received from 8000: <8000, A>
+9000 1586642203841 [P7000] votes sent to 8000: <7000, B>
+9000 1586642205081 [P8000] begin round 3
+9000 1586642207482 [P6000] end round 2
+9000 1586642210232 [P7000] votes received from 8000: <8000, A>, <8000, B>, <8000, B>
+9000 1586642213740 [P7000] end round 3
+9000 1586642216425 [P8000] votes sent to 7000: <8000, A>, <7000, B>, <6000, B>, <6000, B>, <7000, B>
+9000 1586642219486 [P6000] end round 3
+9000 1586642225989 [P8000] votes received from 6000: <6000, B>, <6000, B>, <6000, B>, <6000, A>, <6000, A>, <6000, B>, <6000, B>

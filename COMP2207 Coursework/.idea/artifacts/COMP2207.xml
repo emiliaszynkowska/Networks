@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="COMP2207">
+    <output-path>$PROJECT_DIR$/out/artifacts/COMP2207</output-path>
+    <root id="archive" name="COMP2207.jar" />
+  </artifact>
+</component>

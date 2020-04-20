@@ -1,0 +1,29 @@
+[P8000] connection established to port 5000
+[P8000] JOIN sent to Coordinator on port 5000
+[P8000] connection established to port 8000
+[P8000] started listening on port 8000
+[P8000] received participant ports: 6000, 7000, 8000
+[P8000] connection established to port 8000
+[P8000] started listening on port 8000
+[P8000] received vote options: A, B, C
+[P8000] begin round 1
+[P8000] votes received from 7000: <7000, B>
+[P8000] votes received from 6000: <6000, B>
+[P8000] end round 1
+[P8000] begin round 2
+[P8000] votes sent to 6000: <8000, A>
+[P8000] votes sent to 7000: <8000, A>
+[P8000] votes received from 6000: <6000, B>
+[P8000] votes received from 7000: <7000, B>
+[P8000] end round 2
+[P8000] begin round 3
+[P8000] votes sent to 6000: <8000, A>, <7000, B>, <6000, B>
+[P8000] votes sent to 7000: <8000, A>, <7000, B>, <6000, B>
+[P8000] votes received from 6000: <6000, B>, <6000, B>, <6000, B>
+[P8000] votes sent to 6000: <8000, A>, <7000, B>, <6000, B>, <6000, B>, <7000, B>
+[P8000] votes sent to 7000: <8000, A>, <7000, B>, <6000, B>, <6000, B>, <7000, B>
+[P8000] votes received from 6000: <6000, B>, <6000, B>, <6000, B>, <6000, A>, <6000, A>, <6000, B>, <6000, B>
+[P8000] end round 3
+[P8000] begin round 4
+[P8000] votes received from 6000: <6000, B>, <6000, B>, <6000, B>, <6000, A>, <6000, A>, <6000, B>, <6000, B>
+[P8000] votes sent to 6000: <8000, A>, <7000, B>, <6000, B>, <6000, B>, <7000, B>

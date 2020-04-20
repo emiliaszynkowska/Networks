@@ -1,0 +1,21 @@
+[C] started listening on port 5000
+[C] JOIN received from 6000
+[C] started listening on port 5000
+[C] JOIN received from 7000
+[C] started listening on port 5000
+[C] JOIN received from 8000
+[C] accepted connection from port 6000
+[C] message sent to 6000: "DETAILS 6000 7000 8000 "
+[C] accepted connection from port 7000
+[C] message sent to 7000: "DETAILS 6000 7000 8000 "
+[C] accepted connection from port 8000
+[C] message sent to 8000: "DETAILS 6000 7000 8000 "
+[C] details sent to 5000: 6000, 7000, 8000
+[C] accepted connection from port 6000
+[C] message sent to 6000: "VOTE_OPTIONS A B C "
+[C] accepted connection from port 7000
+[C] message sent to 7000: "VOTE_OPTIONS A B C "
+[C] accepted connection from port 8000
+[C] message sent to 8000: "VOTE_OPTIONS A B C "
+[C] vote options sent to 5000: A, B, C
+[C] started listening on port 5000
