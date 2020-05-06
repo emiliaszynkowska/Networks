@@ -1,0 +1,389 @@
+9999 1588790603404 [P6666] connection established to port 5555
+9999 1588790603427 [C] started listening on port 5555
+9999 1588790603904 [P6666] connection established to port 5555
+9999 1588790603911 [C] started listening on port 5555
+9999 1588790604405 [P6666] connection established to port 5555
+9999 1588790604412 [C] started listening on port 5555
+9999 1588790604638 [P7777] connection established to port 5555
+9999 1588790604908 [P6666] JOIN sent to Coordinator on port 5555
+9999 1588790605137 [P7777] connection established to port 5555
+9999 1588790605408 [P6666] JOIN sent to Coordinator on port 5555
+9999 1588790605638 [P7777] connection established to port 5555
+9999 1588790605851 [P8888] connection established to port 5555
+9999 1588790605909 [P6666] JOIN sent to Coordinator on port 5555
+9999 1588790606142 [P7777] JOIN sent to Coordinator on port 5555
+9999 1588790606351 [P8888] connection established to port 5555
+9999 1588790606410 [C] JOIN received from 6666
+9999 1588790606642 [P7777] JOIN sent to Coordinator on port 5555
+9999 1588790606852 [P8888] connection established to port 5555
+9999 1588790606911 [C] JOIN received from 6666
+9999 1588790607143 [P7777] JOIN sent to Coordinator on port 5555
+9999 1588790607355 [P8888] JOIN sent to Coordinator on port 5555
+9999 1588790607411 [C] JOIN received from 6666
+9999 1588790607855 [P8888] JOIN sent to Coordinator on port 5555
+9999 1588790607911 [C] started listening on port 5555
+9999 1588790608356 [P8888] JOIN sent to Coordinator on port 5555
+9999 1588790608412 [C] started listening on port 5555
+9999 1588790608912 [C] started listening on port 5555
+9999 1588790609413 [C] JOIN received from 7777
+9999 1588790609913 [C] JOIN received from 7777
+9999 1588790610414 [C] JOIN received from 7777
+9999 1588790610915 [C] started listening on port 5555
+9999 1588790611415 [C] started listening on port 5555
+9999 1588790611916 [C] started listening on port 5555
+9999 1588790612416 [C] JOIN received from 8888
+9999 1588790612916 [C] JOIN received from 8888
+9999 1588790613417 [C] JOIN received from 8888
+9999 1588790615420 [C] accepted connection from port 6666
+9999 1588790615420 [P6666] connection established to port 6666
+9999 1588790615920 [P6666] connection established to port 6666
+9999 1588790615920 [C] accepted connection from port 6666
+9999 1588790616420 [P6666] connection established to port 6666
+9999 1588790616420 [C] accepted connection from port 6666
+9999 1588790616921 [P6666] started listening on port 6666
+9999 1588790616930 [C] message sent to 6666: "DETAILS 6666 7777 8888 "
+9999 1588790617422 [P6666] started listening on port 6666
+9999 1588790617431 [C] message sent to 6666: "DETAILS 6666 7777 8888 "
+9999 1588790617922 [P6666] started listening on port 6666
+9999 1588790617932 [C] message sent to 6666: "DETAILS 6666 7777 8888 "
+9999 1588790618665 [P7777] connection established to port 7777
+9999 1588790618666 [C] accepted connection from port 7777
+9999 1588790619165 [P7777] connection established to port 7777
+9999 1588790619166 [C] accepted connection from port 7777
+9999 1588790619439 [P6666] received participant ports: 6666, 7777, 8888
+9999 1588790619666 [P7777] connection established to port 7777
+9999 1588790619667 [C] accepted connection from port 7777
+9999 1588790619939 [P6666] received participant ports: 6666, 7777, 8888
+9999 1588790620166 [P7777] started listening on port 7777
+9999 1588790620167 [C] message sent to 7777: "DETAILS 6666 7777 8888 "
+9999 1588790620440 [P6666] received participant ports: 6666, 7777, 8888
+9999 1588790620667 [P7777] started listening on port 7777
+9999 1588790620668 [C] message sent to 7777: "DETAILS 6666 7777 8888 "
+9999 1588790621167 [P7777] started listening on port 7777
+9999 1588790621168 [C] message sent to 7777: "DETAILS 6666 7777 8888 "
+9999 1588790621875 [P8888] connection established to port 8888
+9999 1588790621875 [C] accepted connection from port 8888
+9999 1588790622376 [C] accepted connection from port 8888
+9999 1588790622376 [P8888] connection established to port 8888
+9999 1588790622674 [P7777] received participant ports: 6666, 7777, 8888
+9999 1588790622876 [C] accepted connection from port 8888
+9999 1588790622876 [P8888] connection established to port 8888
+9999 1588790623174 [P7777] received participant ports: 6666, 7777, 8888
+9999 1588790623376 [C] message sent to 8888: "DETAILS 6666 7777 8888 "
+9999 1588790623376 [P8888] started listening on port 8888
+9999 1588790623675 [P7777] received participant ports: 6666, 7777, 8888
+9999 1588790623877 [P8888] started listening on port 8888
+9999 1588790623877 [C] message sent to 8888: "DETAILS 6666 7777 8888 "
+9999 1588790624377 [C] message sent to 8888: "DETAILS 6666 7777 8888 "
+9999 1588790624377 [P8888] started listening on port 8888
+9999 1588790624882 [C] details sent to 5555: 6666, 7777, 8888
+9999 1588790625383 [C] details sent to 5555: 6666, 7777, 8888
+9999 1588790625884 [P8888] received participant ports: 6666, 7777, 8888
+9999 1588790625884 [C] details sent to 5555: 6666, 7777, 8888
+9999 1588790626384 [P8888] received participant ports: 6666, 7777, 8888
+9999 1588790626884 [P8888] received participant ports: 6666, 7777, 8888
+9999 1588790627449 [P6666] connection established to port 6666
+9999 1588790627449 [C] accepted connection from port 6666
+9999 1588790627949 [C] accepted connection from port 6666
+9999 1588790627949 [P6666] connection established to port 6666
+9999 1588790628450 [P6666] connection established to port 6666
+9999 1588790628450 [C] accepted connection from port 6666
+9999 1588790628951 [P6666] started listening on port 6666
+9999 1588790628952 [C] message sent to 6666: "VOTE_OPTIONS A B C "
+9999 1588790629451 [P6666] started listening on port 6666
+9999 1588790629452 [C] message sent to 6666: "VOTE_OPTIONS A B C "
+9999 1588790629951 [P6666] started listening on port 6666
+9999 1588790629952 [C] message sent to 6666: "VOTE_OPTIONS A B C "
+9999 1588790630684 [P7777] connection established to port 7777
+9999 1588790630684 [C] accepted connection from port 7777
+9999 1588790631184 [C] accepted connection from port 7777
+9999 1588790631184 [P7777] connection established to port 7777
+9999 1588790631452 [P6666] received vote options: A, B, C
+9999 1588790631684 [P7777] connection established to port 7777
+9999 1588790631684 [C] accepted connection from port 7777
+9999 1588790631953 [P6666] received vote options: A, B, C
+9999 1588790632185 [C] message sent to 7777: "VOTE_OPTIONS A B C "
+9999 1588790632185 [P7777] started listening on port 7777
+9999 1588790632454 [P6666] received vote options: A, B, C
+9999 1588790632685 [C] message sent to 7777: "VOTE_OPTIONS A B C "
+9999 1588790632685 [P7777] started listening on port 7777
+9999 1588790632956 [P6666] begin round 1
+9999 1588790633186 [C] message sent to 7777: "VOTE_OPTIONS A B C "
+9999 1588790633186 [P7777] started listening on port 7777
+9999 1588790633456 [P6666] begin round 1
+9999 1588790633905 [P8888] connection established to port 8888
+9999 1588790633905 [C] accepted connection from port 8888
+9999 1588790633956 [P6666] begin round 1
+9999 1588790634406 [C] accepted connection from port 8888
+9999 1588790634406 [P8888] connection established to port 8888
+9999 1588790634686 [P7777] received vote options: A, B, C
+9999 1588790634906 [P8888] connection established to port 8888
+9999 1588790634906 [C] accepted connection from port 8888
+9999 1588790635186 [P7777] received vote options: A, B, C
+9999 1588790635406 [C] message sent to 8888: "VOTE_OPTIONS A B C "
+9999 1588790635406 [P8888] started listening on port 8888
+9999 1588790635687 [P7777] received vote options: A, B, C
+9999 1588790635907 [C] message sent to 8888: "VOTE_OPTIONS A B C "
+9999 1588790635907 [P8888] started listening on port 8888
+9999 1588790636188 [P7777] begin round 1
+9999 1588790636407 [C] message sent to 8888: "VOTE_OPTIONS A B C "
+9999 1588790636407 [P8888] started listening on port 8888
+9999 1588790636466 [P7777] votes sent to 6666: <7777, B>
+9999 1588790636466 [P6666] votes received from 7777: <7777, B>
+9999 1588790636688 [P7777] begin round 1
+9999 1588790636909 [C] vote options sent to 5555: A, B, C
+9999 1588790636967 [P7777] votes sent to 6666: <7777, B>
+9999 1588790636967 [P6666] votes received from 7777: <7777, B>
+9999 1588790637189 [P7777] begin round 1
+9999 1588790637410 [C] vote options sent to 5555: A, B, C
+9999 1588790637468 [P6666] votes received from 7777: <7777, B>
+9999 1588790637468 [P7777] votes sent to 6666: <7777, B>
+9999 1588790637909 [P8888] received vote options: A, B, C
+9999 1588790637910 [C] vote options sent to 5555: A, B, C
+9999 1588790638409 [P8888] received vote options: A, B, C
+9999 1588790638909 [P8888] received vote options: A, B, C
+9999 1588790639190 [P6666] votes sent to 7777: <6666, A>
+9999 1588790639190 [P7777] votes received from 6666: <6666, A>
+9999 1588790639412 [P8888] begin round 1
+9999 1588790639691 [P6666] votes sent to 7777: <6666, A>
+9999 1588790639691 [P7777] votes received from 6666: <6666, A>
+9999 1588790639912 [P8888] begin round 1
+9999 1588790640192 [P7777] votes received from 6666: <6666, A>
+9999 1588790640192 [P6666] votes sent to 7777: <6666, A>
+9999 1588790640413 [P8888] begin round 1
+9999 1588790642411 [P7777] votes sent to 8888: <7777, B>
+9999 1588790642421 [P8888] votes received from 7777: <7777, B>
+9999 1588790642911 [P7777] votes sent to 8888: <7777, B>
+9999 1588790642921 [P8888] votes received from 7777: <7777, B>
+9999 1588790643412 [P7777] votes sent to 8888: <7777, B>
+9999 1588790643422 [P8888] votes received from 7777: <7777, B>
+9999 1588790644442 [P6666] votes sent to 8888: <6666, A>
+9999 1588790644442 [P6666] votes received from 8888: <8888, B>
+9999 1588790644442 [P8888] votes received from 6666: <6666, A>
+9999 1588790644443 [P8888] votes sent to 6666: <8888, B>
+9999 1588790644942 [P6666] votes sent to 8888: <6666, A>
+9999 1588790644942 [P8888] votes received from 6666: <6666, A>
+9999 1588790644942 [P6666] votes received from 8888: <8888, B>
+9999 1588790644943 [P8888] votes sent to 6666: <8888, B>
+9999 1588790645443 [P8888] votes received from 6666: <6666, A>
+9999 1588790645443 [P6666] votes sent to 8888: <6666, A>
+9999 1588790645443 [P6666] votes received from 8888: <8888, B>
+9999 1588790645444 [P8888] votes sent to 6666: <8888, B>
+9999 1588790646256 [P7777] votes received from 6666: <6666, A>
+9999 1588790646256 [P6666] votes sent to 7777: <6666, A>
+9999 1588790646756 [P6666] votes sent to 7777: <6666, A>
+9999 1588790646756 [P7777] votes received from 6666: <6666, A>
+9999 1588790647257 [P7777] votes received from 6666: <6666, A>
+9999 1588790647257 [P6666] votes sent to 7777: <6666, A>
+9999 1588790648256 [P6666] votes sent to 8888: <6666, A>
+9999 1588790648256 [P8888] votes received from 6666: <6666, A>
+9999 1588790648756 [P6666] votes sent to 8888: <6666, A>
+9999 1588790648756 [P8888] votes received from 6666: <6666, A>
+9999 1588790649257 [P8888] votes received from 6666: <6666, A>
+9999 1588790649257 [P6666] votes sent to 8888: <6666, A>
+9999 1588790650067 [P6666] votes received from 7777: <7777, B>
+9999 1588790650068 [P7777] votes sent to 6666: <7777, B>
+9999 1588790650568 [P6666] votes received from 7777: <7777, B>
+9999 1588790650569 [P7777] votes sent to 6666: <7777, B>
+9999 1588790651068 [P6666] votes received from 7777: <7777, B>
+9999 1588790651069 [P7777] votes sent to 6666: <7777, B>
+9999 1588790654243 [P7777] votes sent to 8888: <7777, B>
+9999 1588790654243 [P6666] votes sent to 7777: <6666, A>
+9999 1588790654243 [P7777] votes received from 6666: <6666, A>
+9999 1588790654244 [P8888] votes received from 7777: <7777, B>
+9999 1588790654743 [P7777] votes sent to 8888: <7777, B>
+9999 1588790654743 [P6666] votes sent to 7777: <6666, A>
+9999 1588790654743 [P7777] votes received from 6666: <6666, A>
+9999 1588790654744 [P8888] votes received from 7777: <7777, B>
+9999 1588790655244 [P7777] votes sent to 8888: <7777, B>
+9999 1588790655244 [P7777] votes received from 6666: <6666, A>
+9999 1588790655244 [P6666] votes sent to 7777: <6666, A>
+9999 1588790655245 [P8888] votes received from 7777: <7777, B>
+9999 1588790656154 [P7777] votes sent to 6666: <7777, B>
+9999 1588790656155 [P6666] votes received from 7777: <7777, B>
+9999 1588790656155 [P6666] votes sent to 8888: <6666, A>
+9999 1588790656155 [P8888] votes received from 6666: <6666, A>
+9999 1588790656655 [P6666] votes received from 7777: <7777, B>
+9999 1588790656655 [P7777] votes sent to 6666: <7777, B>
+9999 1588790656656 [P6666] votes sent to 8888: <6666, A>
+9999 1588790656656 [P8888] votes received from 6666: <6666, A>
+9999 1588790657155 [P7777] votes sent to 6666: <7777, B>
+9999 1588790657155 [P6666] votes received from 7777: <7777, B>
+9999 1588790657156 [P6666] votes sent to 8888: <6666, A>
+9999 1588790657156 [P8888] votes received from 6666: <6666, A>
+9999 1588790661877 [P7777] votes sent to 8888: <7777, B>
+9999 1588790661877 [P8888] votes received from 7777: <7777, B>
+9999 1588790661877 [P7777] votes received from 6666: <6666, A>
+9999 1588790661878 [P6666] votes sent to 7777: <6666, A>
+9999 1588790662377 [P7777] votes received from 6666: <6666, A>
+9999 1588790662377 [P8888] votes received from 7777: <7777, B>
+9999 1588790662377 [P7777] votes sent to 8888: <7777, B>
+9999 1588790662378 [P6666] votes sent to 7777: <6666, A>
+9999 1588790662878 [P7777] votes received from 6666: <6666, A>
+9999 1588790662878 [P8888] votes received from 7777: <7777, B>
+9999 1588790662878 [P7777] votes sent to 8888: <7777, B>
+9999 1588790662879 [P6666] votes sent to 7777: <6666, A>
+9999 1588790663769 [P7777] votes sent to 6666: <7777, B>
+9999 1588790663769 [P6666] votes received from 7777: <7777, B>
+9999 1588790663769 [P6666] votes sent to 8888: <6666, A>
+9999 1588790663769 [P8888] votes received from 6666: <6666, A>
+9999 1588790664269 [P6666] votes sent to 8888: <6666, A>
+9999 1588790664269 [P8888] votes received from 6666: <6666, A>
+9999 1588790664269 [P7777] votes sent to 6666: <7777, B>
+9999 1588790664269 [P6666] votes received from 7777: <7777, B>
+9999 1588790664770 [P6666] votes sent to 8888: <6666, A>
+9999 1588790664770 [P7777] votes sent to 6666: <7777, B>
+9999 1588790664770 [P6666] votes received from 7777: <7777, B>
+9999 1588790664770 [P8888] votes received from 6666: <6666, A>
+9999 1588790669577 [P7777] votes sent to 8888: <7777, B>
+9999 1588790669577 [P7777] votes received from 6666: <6666, A>
+9999 1588790669577 [P8888] votes received from 7777: <7777, B>
+9999 1588790669577 [P6666] votes sent to 7777: <6666, A>
+9999 1588790670078 [P7777] votes received from 6666: <6666, A>
+9999 1588790670078 [P8888] votes received from 7777: <7777, B>
+9999 1588790670078 [P7777] votes sent to 8888: <7777, B>
+9999 1588790670078 [P6666] votes sent to 7777: <6666, A>
+9999 1588790670578 [P8888] votes received from 7777: <7777, B>
+9999 1588790670578 [P6666] votes sent to 7777: <6666, A>
+9999 1588790670578 [P7777] votes sent to 8888: <7777, B>
+9999 1588790670578 [P7777] votes received from 6666: <6666, A>
+9999 1588790671452 [P7777] votes sent to 6666: <7777, B>
+9999 1588790671452 [P6666] votes received from 7777: <7777, B>
+9999 1588790671452 [P6666] votes sent to 8888: <6666, A>
+9999 1588790671453 [P8888] votes received from 6666: <6666, A>
+9999 1588790671952 [P7777] votes sent to 6666: <7777, B>
+9999 1588790671952 [P6666] votes sent to 8888: <6666, A>
+9999 1588790671952 [P6666] votes received from 7777: <7777, B>
+9999 1588790671952 [P8888] votes received from 6666: <6666, A>
+9999 1588790672453 [P8888] votes received from 6666: <6666, A>
+9999 1588790672453 [P6666] votes sent to 8888: <6666, A>
+9999 1588790672453 [P6666] votes received from 7777: <7777, B>
+9999 1588790672453 [P7777] votes sent to 6666: <7777, B>
+9999 1588790677256 [P7777] votes sent to 8888: <7777, B>
+9999 1588790677256 [P8888] votes received from 7777: <7777, B>
+9999 1588790677256 [P7777] votes received from 6666: <6666, A>
+9999 1588790677256 [P6666] votes sent to 7777: <6666, A>
+9999 1588790677757 [P8888] votes received from 7777: <7777, B>
+9999 1588790677757 [P6666] votes sent to 7777: <6666, A>
+9999 1588790677757 [P7777] votes received from 6666: <6666, A>
+9999 1588790677757 [P7777] votes sent to 8888: <7777, B>
+9999 1588790678257 [P7777] votes sent to 8888: <7777, B>
+9999 1588790678257 [P7777] votes received from 6666: <6666, A>
+9999 1588790678257 [P6666] votes sent to 7777: <6666, A>
+9999 1588790678257 [P8888] votes received from 7777: <7777, B>
+9999 1588790679103 [P7777] votes sent to 6666: <7777, B>
+9999 1588790679103 [P6666] votes received from 7777: <7777, B>
+9999 1588790679103 [P8888] votes received from 6666: <6666, A>
+9999 1588790679103 [P6666] votes sent to 8888: <6666, A>
+9999 1588790679604 [P6666] votes received from 7777: <7777, B>
+9999 1588790679604 [P8888] votes received from 6666: <6666, A>
+9999 1588790679604 [P6666] votes sent to 8888: <6666, A>
+9999 1588790679604 [P7777] votes sent to 6666: <7777, B>
+9999 1588790680105 [P7777] votes sent to 6666: <7777, B>
+9999 1588790680105 [P6666] votes received from 7777: <7777, B>
+9999 1588790680105 [P8888] votes received from 6666: <6666, A>
+9999 1588790680105 [P6666] votes sent to 8888: <6666, A>
+9999 1588790684809 [P7777] votes sent to 8888: <7777, B>
+9999 1588790684809 [P7777] votes received from 6666: <6666, A>
+9999 1588790684809 [P8888] votes received from 7777: <7777, B>
+9999 1588790684809 [P6666] votes sent to 7777: <6666, A>
+9999 1588790685310 [P8888] votes received from 7777: <7777, B>
+9999 1588790685310 [P6666] votes sent to 7777: <6666, A>
+9999 1588790685310 [P7777] votes received from 6666: <6666, A>
+9999 1588790685310 [P7777] votes sent to 8888: <7777, B>
+9999 1588790685810 [P8888] votes received from 7777: <7777, B>
+9999 1588790685810 [P6666] votes sent to 7777: <6666, A>
+9999 1588790685810 [P7777] votes sent to 8888: <7777, B>
+9999 1588790685810 [P7777] votes received from 6666: <6666, A>
+9999 1588790686652 [P7777] votes sent to 6666: <7777, B>
+9999 1588790686652 [P6666] votes received from 7777: <7777, B>
+9999 1588790686652 [P6666] votes sent to 8888: <6666, A>
+9999 1588790686652 [P8888] votes received from 6666: <6666, A>
+9999 1588790687153 [P8888] votes received from 6666: <6666, A>
+9999 1588790687153 [P7777] votes sent to 6666: <7777, B>
+9999 1588790687153 [P6666] votes sent to 8888: <6666, A>
+9999 1588790687153 [P6666] votes received from 7777: <7777, B>
+9999 1588790687653 [P6666] votes sent to 8888: <6666, A>
+9999 1588790687653 [P8888] votes received from 6666: <6666, A>
+9999 1588790687653 [P6666] votes received from 7777: <7777, B>
+9999 1588790687653 [P7777] votes sent to 6666: <7777, B>
+9999 1588790692464 [P7777] votes sent to 8888: <7777, B>
+9999 1588790692464 [P7777] votes received from 8888: <8888, B>
+9999 1588790692464 [P8888] votes received from 7777: <7777, B>
+9999 1588790692464 [P8888] votes sent to 7777: <8888, B>
+9999 1588790692965 [P7777] votes received from 8888: <8888, B>
+9999 1588790692965 [P8888] votes sent to 7777: <8888, B>
+9999 1588790692965 [P7777] votes sent to 8888: <7777, B>
+9999 1588790692965 [P8888] votes received from 7777: <7777, B>
+9999 1588790693465 [P7777] votes sent to 8888: <7777, B>
+9999 1588790693465 [P7777] votes received from 8888: <8888, B>
+9999 1588790693465 [P8888] votes sent to 7777: <8888, B>
+9999 1588790693465 [P8888] votes received from 7777: <7777, B>
+9999 1588790694284 [P8888] votes sent to 6666: <8888, B>
+9999 1588790694284 [P6666] votes received from 8888: <8888, B>
+9999 1588790694783 [P8888] votes sent to 6666: <8888, B>
+9999 1588790694783 [P6666] votes received from 8888: <8888, B>
+9999 1588790695284 [P8888] votes sent to 6666: <8888, B>
+9999 1588790695284 [P6666] votes received from 8888: <8888, B>
+9999 1588790696962 [P8888] votes sent to 7777: <8888, B>
+9999 1588790696963 [P7777] votes sent to 6666: <7777, B>
+9999 1588790696963 [P7777] votes received from 8888: <8888, B>
+9999 1588790696963 [P6666] votes received from 7777: <7777, B>
+9999 1588790697463 [P7777] votes sent to 6666: <7777, B>
+9999 1588790697463 [P8888] votes sent to 7777: <8888, B>
+9999 1588790697463 [P7777] votes received from 8888: <8888, B>
+9999 1588790697463 [P6666] votes received from 7777: <7777, B>
+9999 1588790697964 [P6666] votes received from 7777: <7777, B>
+9999 1588790697964 [P7777] votes sent to 6666: <7777, B>
+9999 1588790697965 [P7777] votes received from 8888: <8888, B>
+9999 1588790697965 [P8888] votes sent to 7777: <8888, B>
+9999 1588790698791 [P7777] votes sent to 8888: <7777, B>
+9999 1588790698791 [P8888] votes received from 7777: <7777, B>
+9999 1588790699292 [P7777] votes sent to 8888: <7777, B>
+9999 1588790699292 [P8888] votes received from 7777: <7777, B>
+9999 1588790699793 [P7777] votes sent to 8888: <7777, B>
+9999 1588790699793 [P8888] votes received from 7777: <7777, B>
+9999 1588790702051 [P7777] votes sent to 6666: <7777, B>
+9999 1588790702051 [P6666] votes received from 7777: <7777, B>
+9999 1588790702551 [P7777] votes sent to 6666: <7777, B>
+9999 1588790702551 [P6666] votes received from 7777: <7777, B>
+9999 1588790702904 [P6666] votes sent to 7777: <6666, A>
+9999 1588790702904 [P7777] votes received from 6666: <6666, A>
+9999 1588790703052 [P6666] votes received from 7777: <7777, B>
+9999 1588790703052 [P7777] votes sent to 6666: <7777, B>
+9999 1588790703405 [P7777] votes received from 6666: <6666, A>
+9999 1588790703405 [P6666] votes sent to 7777: <6666, A>
+9999 1588790703906 [P6666] votes sent to 7777: <6666, A>
+9999 1588790703906 [P7777] votes received from 6666: <6666, A>
+9999 1588790704051 [P7777] votes sent to 8888: <7777, B>
+9999 1588790704052 [P8888] votes received from 7777: <7777, B>
+9999 1588790704552 [P7777] votes sent to 8888: <7777, B>
+9999 1588790704553 [P8888] votes received from 7777: <7777, B>
+9999 1588790705052 [P7777] votes sent to 8888: <7777, B>
+9999 1588790705053 [P8888] votes received from 7777: <7777, B>
+9999 1588790710244 [P8888] votes sent to 6666: <8888, B>
+9999 1588790710245 [P6666] votes sent to 8888: <6666, A>
+9999 1588790710245 [P8888] votes received from 6666: <6666, A>
+9999 1588790710245 [P6666] votes received from 8888: <8888, B>
+9999 1588790710744 [P6666] votes received from 8888: <8888, B>
+9999 1588790710744 [P8888] votes received from 6666: <6666, A>
+9999 1588790710744 [P8888] votes sent to 6666: <8888, B>
+9999 1588790710744 [P6666] votes sent to 8888: <6666, A>
+9999 1588790711245 [P8888] votes received from 6666: <6666, A>
+9999 1588790711245 [P6666] votes sent to 8888: <6666, A>
+9999 1588790711245 [P6666] votes received from 8888: <8888, B>
+9999 1588790711245 [P8888] votes sent to 6666: <8888, B>
+9999 1588790711836 [P8888] votes sent to 7777: <8888, B>
+9999 1588790711836 [P7777] votes received from 8888: <8888, B>
+9999 1588790712337 [P7777] votes received from 8888: <8888, B>
+9999 1588790712337 [P8888] votes sent to 7777: <8888, B>
+9999 1588790712837 [P8888] votes sent to 7777: <8888, B>
+9999 1588790712837 [P7777] votes received from 8888: <8888, B>
+9999 1588790715006 [P7777] votes sent to 6666: <7777, B>
+9999 1588790715006 [P6666] votes received from 7777: <7777, B>
+9999 1588790715006 [P6666] votes sent to 7777: <6666, A>
+9999 1588790715006 [P7777] votes received from 6666: <6666, A>
+9999 1588790715506 [P7777] votes sent to 6666: <7777, B>
+9999 1588790715506 [P7777] votes received from 6666: <6666, A>
+9999 1588790715506 [P6666] votes sent to 7777: <6666, A>
+9999 1588790715506 [P6666] votes received from 7777: <7777, B>

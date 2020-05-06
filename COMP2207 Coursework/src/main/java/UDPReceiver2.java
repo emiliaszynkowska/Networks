@@ -1,9 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.Socket;
+import java.net.*;
 
 public class UDPReceiver2 implements Runnable {
 
@@ -22,19 +19,20 @@ public class UDPReceiver2 implements Runnable {
 
     @Override
     public void run() {
-        while(true) {
-            try {
+        try {
+            DatagramSocket socket = new DatagramSocket(port);
+            byte[] buf = new byte[256];
+            DatagramPacket packet = new DatagramPacket(buf, buf.length);
+            while(true) {
                 // Receive a datagram packet
-                DatagramSocket socket = new DatagramSocket(port);
-                byte[] buf = new byte[256];
-                DatagramPacket packet = new DatagramPacket(buf, buf.length);
                 socket.receive(packet);
                 String message = new String(packet.getData(), 0, packet.getLength()).trim();
                 // Relay the message to the UDPLoggerClient
-                parent.getMessage(message);
-                socket.close();
-                Thread.sleep(1000);
-            } catch (IOException | InterruptedException e) {}
-        }
+                if(!message.contains("ACK"))
+                    parent.getMessage(message);
+                if(message.contains("accepted"))
+                    parent.connectionAccepted();
+            }
+        } catch (IOException e) {}
     }
 }

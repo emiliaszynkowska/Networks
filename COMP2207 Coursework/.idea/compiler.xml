@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="COMP2207 Coursework" />
         <module name="COMP2207" />
+        <module name="COMP2207 Coursework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

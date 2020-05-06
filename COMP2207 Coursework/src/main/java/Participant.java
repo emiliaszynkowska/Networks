@@ -1,6 +1,7 @@
 import java.io.*;
 import java.lang.reflect.Array;
 import java.net.InetAddress;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
 import java.util.function.Function;
@@ -19,16 +20,20 @@ public class Participant {
     private ArrayList<Vote> votesReceived;
     private ArrayList<Vote> votesSent;
     private ArrayList<Vote> votesToSend;
+    private int currentRound;
     private Map.Entry<ArrayList<Vote>, Long> outcome;
     private Socket clientSocket;
     PrintWriter out;
     BufferedReader in;
 
+    public synchronized int getTimeout() { return timeout; }
     public synchronized int getNumberOfVotesReceived() { return numberOfVotesReceived; }
     public synchronized void setNumberOfVotesReceived() { numberOfVotesReceived++; }
     public synchronized ArrayList<Vote> getVotesReceived() { return votesReceived; }
     public synchronized ArrayList<Vote> getVotesSent() { return votesSent; }
     public synchronized ArrayList<Vote> getVotesToSend() { return votesToSend; }
+    public synchronized int getCurrentRound() { return currentRound; }
+    public synchronized void setCurrentRound(int i) { if (i > currentRound) currentRound = i; }
     public synchronized void setOutcome(Map.Entry<ArrayList<Vote>, Long> outcome) { this.outcome = outcome; }
 
     /*
@@ -174,8 +179,9 @@ public class Participant {
 
         // Start the next round
         int round = participants.size();
-        for (int i=0; i<=round; i++) {
-            ParticipantLogger.getLogger().beginRound(i+1);
+        for (int i=1; i<=round+1; i++) {
+            ParticipantLogger.getLogger().beginRound(i);
+            setCurrentRound(i);
 
             // Add unsent votes to votesToSend
             while(true) {
@@ -195,11 +201,11 @@ public class Participant {
             // Receive votes until the correct number of votes have been received
             while (numberOfVotesReceived < participants.size()-1) {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(400);
                 } catch (InterruptedException e) {}
             }
 
-            ParticipantLogger.getLogger().endRound(i+1);
+            ParticipantLogger.getLogger().endRound(i);
         }
         receiveThread.stop();
         sendThread.stop();
@@ -224,7 +230,7 @@ public class Participant {
         try {
             newSocket(cport);
             out = new PrintWriter(clientSocket.getOutputStream(), true);
-            out.write(output, 0, output.length());
+            out.println("OUTCOME " + output);
             ParticipantLogger.getLogger().outcomeNotified(output);
             out.close();
             clientSocket.close();
@@ -236,6 +242,11 @@ public class Participant {
             clientSocket = new Socket(InetAddress.getLocalHost(), port);
             ParticipantLogger.getLogger().connectionEstablished(port);
         } catch (IOException e) {}
+    }
+
+    public void timeout(int p) {
+        ParticipantLogger.getLogger().participantCrashed(p);
+        participants.remove((Object) p);
     }
 
 }

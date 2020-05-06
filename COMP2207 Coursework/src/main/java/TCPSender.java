@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.HashMap;
+import java.util.Random;
 
 public class TCPSender implements Runnable {
     private Participant parent;
@@ -45,17 +46,24 @@ public class TCPSender implements Runnable {
 
                 // Send a vote to the other participants
                 Boolean sent = false;
+                //int timeout = 0;
                 while (!sent) {
                     try {
+//                        Random random = new Random();
+//                        Thread.sleep(random.nextInt(3)*1000);
+//                        if (timeout > 5) {
+//                            parent.timeout(port);
+//                        }
+//                        timeout += 1;
                         ServerSocket sendServerSocket = new ServerSocket(port);
                         sendSocket = sendServerSocket.accept();
                         out = new PrintWriter(sendSocket.getOutputStream(), true);
                         out.println(message);
+                        sent = true;
                         out.close();
                         sendSocket.close();
                         parent.getVotesSent().addAll(votesToSend);
                         ParticipantLogger.getLogger().votesSent(port,votesToSend);
-                        sent = true;
                     } catch (IOException e) {}
                 }
             }

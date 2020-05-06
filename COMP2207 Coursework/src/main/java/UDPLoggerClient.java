@@ -4,13 +4,14 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class UDPLoggerClient {
-	
+
 	private final int loggerServerPort;
 	private final int processId;
 	private final int timeout;
 	private Boolean ack;
-	private Thread receiveThread;
-	private Thread sendThread;
+	DatagramSocket sendSocket;
+	DatagramSocket receiveSocket;
+	private final Thread receiveThread;
 
 	public int getLoggerServerPort() {
 		return loggerServerPort;
@@ -32,6 +33,14 @@ public class UDPLoggerClient {
 		this.loggerServerPort = loggerServerPort;
 		this.processId = processId;
 		this.timeout = timeout;
+		boolean success = false;
+		while (!success) {
+			try {
+				sendSocket = new DatagramSocket();
+				//receiveSocket = new DatagramSocket(loggerServerPort);
+				success = true;
+			} catch (IOException e) {}
+		}
 		receiveThread = new Thread(new UDPReceiver1(this, loggerServerPort));
 		receiveThread.start();
 	}
@@ -44,13 +53,13 @@ public class UDPLoggerClient {
 		ack = false;
 		int counter = 0;
 		while (counter < 3 && ack == false) {
-			InetAddress address = InetAddress.getLocalHost();
-			DatagramSocket socket = new DatagramSocket();
-			byte[] buf = message.getBytes();
-			DatagramPacket packet = new DatagramPacket(buf, buf.length, address, loggerServerPort);
-			socket.send(packet);
-			socket.close();
+			byte[] bufSend = message.getBytes();
+			DatagramPacket sendPacket = new DatagramPacket(bufSend, bufSend.length, InetAddress.getLocalHost(), loggerServerPort);
+			sendSocket.send(sendPacket);
 			counter++;
+			try {
+				Thread.sleep(timeout);
+			} catch (InterruptedException e) {}
 		}
 	}
 

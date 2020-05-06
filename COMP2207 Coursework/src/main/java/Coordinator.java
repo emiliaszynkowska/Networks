@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class Coordinator {
 
@@ -26,11 +27,13 @@ public class Coordinator {
     Create a new Coordinator
      */
     public static void main(String[] args) throws IOException, InterruptedException {
-        ArrayList<String> optionsInput = new ArrayList<>();
+        ArrayList<String> optionsInputList = new ArrayList<>();
+        HashSet<String> optionsInputSet = new HashSet<>();
         for (int i=4; i<args.length; i++) {
-            optionsInput.add(args[i]);
+            optionsInputSet.add(args[i]);
         }
-        new Coordinator(Integer.valueOf(args[0]),Integer.valueOf(args[1]),Integer.valueOf(args[2]),Integer.valueOf(args[3]),optionsInput);
+        optionsInputList.addAll(optionsInputSet);
+        new Coordinator(Integer.valueOf(args[0]),Integer.valueOf(args[1]),Integer.valueOf(args[2]),Integer.valueOf(args[3]),optionsInputList);
     }
 
     /*
@@ -160,32 +163,29 @@ public class Coordinator {
     Receive outcome from participants as the byte stream OUTCOME <outcome> [<port>]
      */
     public void getOutcome() throws InterruptedException {
-        while(true) {
             try {
                 serverSocket = new ServerSocket(port);
                 clientSocket = serverSocket.accept();
                 in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 CoordinatorLogger.getLogger().startedListening(port);
-                String message = in.readLine();
-                if (message.contains("OUTCOME")) {
-                    String[] messageSplit = message.split(" ");
-                    String outcome = messageSplit[1];
-                    ArrayList<String> messageParticipants = new ArrayList<>();
-                    Integer sender = null;
-                    for (int i = 2; i < messageSplit.length; i++) {
-                        messageParticipants.add(messageSplit[i]);
+                    while(true) {
+                        String message = in.readLine();
+                        if (message.contains("OUTCOME")) {
+                            String[] messageSplit = message.split(" ");
+                            String outcome = messageSplit[1];
+                            ArrayList<String> messageParticipants = new ArrayList<>();
+                            Integer sender = null;
+                            for (int i = 2; i < messageSplit.length; i++) {
+                                messageParticipants.add(messageSplit[i]);
+                            }
+                            for (Integer participant : participantsList) {
+                                if (!(messageParticipants.contains(participant)))
+                                    sender = participant;
+                            }
+                            CoordinatorLogger.getLogger().outcomeReceived(sender, outcome);
+                            break;
+                        }
                     }
-                    for (Integer participant : participantsList) {
-                        if (!(messageParticipants.contains(participant)))
-                            sender = participant;
-                    }
-                    CoordinatorLogger.getLogger().outcomeReceived(sender, outcome);
-                    break;
-                }
-                in.close();
-                clientSocket.close();
             } catch (IOException e) {}
         }
-    }
-
 }

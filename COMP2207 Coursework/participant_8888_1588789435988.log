@@ -1,0 +1,12 @@
+[P8888] connection established to port 5555
+[P8888] JOIN sent to Coordinator on port 5555
+[P8888] connection established to port 8888
+[P8888] started listening on port 8888
+[P8888] received participant ports: 6666, 7777, 8888
+[P8888] connection established to port 8888
+[P8888] started listening on port 8888
+[P8888] received vote options: A, B, C
+[P8888] begin round 1
+[P8888] participant crashed: 6666
+[P8888] participant crashed: 6666
+[P8888] participant crashed: 6666
