@@ -37,7 +37,6 @@ public class UDPLoggerClient {
 		while (!success) {
 			try {
 				sendSocket = new DatagramSocket();
-				//receiveSocket = new DatagramSocket(loggerServerPort);
 				success = true;
 			} catch (IOException e) {}
 		}

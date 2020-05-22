@@ -46,15 +46,8 @@ public class TCPSender implements Runnable {
 
                 // Send a vote to the other participants
                 Boolean sent = false;
-                //int timeout = 0;
                 while (!sent) {
                     try {
-//                        Random random = new Random();
-//                        Thread.sleep(random.nextInt(3)*1000);
-//                        if (timeout > 5) {
-//                            parent.timeout(port);
-//                        }
-//                        timeout += 1;
                         ServerSocket sendServerSocket = new ServerSocket(port);
                         sendSocket = sendServerSocket.accept();
                         out = new PrintWriter(sendSocket.getOutputStream(), true);

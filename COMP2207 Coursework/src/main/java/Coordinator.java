@@ -22,6 +22,9 @@ public class Coordinator {
     PrintWriter out;
     BufferedReader in;
 
+    public void removePart() { parts --; }
+    public ArrayList<Integer> getParticipantsList() { return participantsList; }
+
     /*
     Get arguments <port> <lport> <parts> <timeout> [<option>]
     Create a new Coordinator
@@ -163,6 +166,8 @@ public class Coordinator {
     Receive outcome from participants as the byte stream OUTCOME <outcome> [<port>]
      */
     public void getOutcome() throws InterruptedException {
+        Thread pingThread = new Thread(new Pinger(this));
+        pingThread.start();
             try {
                 serverSocket = new ServerSocket(port);
                 clientSocket = serverSocket.accept();

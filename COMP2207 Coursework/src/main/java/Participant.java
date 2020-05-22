@@ -1,7 +1,5 @@
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.InetAddress;
-import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
 import java.util.function.Function;
@@ -20,20 +18,16 @@ public class Participant {
     private ArrayList<Vote> votesReceived;
     private ArrayList<Vote> votesSent;
     private ArrayList<Vote> votesToSend;
-    private int currentRound;
     private Map.Entry<ArrayList<Vote>, Long> outcome;
     private Socket clientSocket;
     PrintWriter out;
     BufferedReader in;
 
-    public synchronized int getTimeout() { return timeout; }
     public synchronized int getNumberOfVotesReceived() { return numberOfVotesReceived; }
-    public synchronized void setNumberOfVotesReceived() { numberOfVotesReceived++; }
+    public synchronized void setNumberOfVotesReceived() { numberOfVotesReceived ++; }
     public synchronized ArrayList<Vote> getVotesReceived() { return votesReceived; }
     public synchronized ArrayList<Vote> getVotesSent() { return votesSent; }
     public synchronized ArrayList<Vote> getVotesToSend() { return votesToSend; }
-    public synchronized int getCurrentRound() { return currentRound; }
-    public synchronized void setCurrentRound(int i) { if (i > currentRound) currentRound = i; }
     public synchronized void setOutcome(Map.Entry<ArrayList<Vote>, Long> outcome) { this.outcome = outcome; }
 
     /*
@@ -59,8 +53,6 @@ public class Participant {
         votesReceived = new ArrayList<>();
         votesSent = new ArrayList<>();
         votesToSend = new ArrayList<>();
-        long longTime = System.currentTimeMillis();
-        int intTime = (int) longTime;
         ParticipantLogger.initLogger(lport,pport,timeout);
         run();
     }
@@ -181,7 +173,6 @@ public class Participant {
         int round = participants.size();
         for (int i=1; i<=round+1; i++) {
             ParticipantLogger.getLogger().beginRound(i);
-            setCurrentRound(i);
 
             // Add unsent votes to votesToSend
             while(true) {
@@ -199,7 +190,12 @@ public class Participant {
             numberOfVotesReceived = 0;
 
             // Receive votes until the correct number of votes have been received
+            int counter = 0;
             while (numberOfVotesReceived < participants.size()-1) {
+                counter += 400;
+                if (counter > 5000) {
+                    break;
+                }
                 try {
                     Thread.sleep(400);
                 } catch (InterruptedException e) {}
@@ -223,7 +219,13 @@ public class Participant {
                 .ifPresent(this::setOutcome);
         String output = outcome.getKey().get(0).getVote();
         int sender = outcome.getKey().get(0).getParticipantPort();
-        ParticipantLogger.getLogger().outcomeDecided(output);
+        HashSet<Integer> participatedSet = new HashSet<>();
+        ArrayList<Integer> participatedList = new ArrayList<>();
+        for (Vote vote : votesReceived) {
+            participatedSet.add(vote.getParticipantPort());
+        }
+        participatedList.addAll(participatedSet);
+        ParticipantLogger.getLogger().outcomeDecided(output, participatedList);
 
         // Send the outcome to the coordinator
         String message = "OUTCOME " + outcome + " " + sender;
@@ -231,7 +233,7 @@ public class Participant {
             newSocket(cport);
             out = new PrintWriter(clientSocket.getOutputStream(), true);
             out.println("OUTCOME " + output);
-            ParticipantLogger.getLogger().outcomeNotified(output);
+            ParticipantLogger.getLogger().outcomeNotified(output, participatedList);
             out.close();
             clientSocket.close();
         } catch (IOException e) {}
@@ -242,11 +244,6 @@ public class Participant {
             clientSocket = new Socket(InetAddress.getLocalHost(), port);
             ParticipantLogger.getLogger().connectionEstablished(port);
         } catch (IOException e) {}
-    }
-
-    public void timeout(int p) {
-        ParticipantLogger.getLogger().participantCrashed(p);
-        participants.remove((Object) p);
     }
 
 }

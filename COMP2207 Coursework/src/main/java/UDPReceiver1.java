@@ -21,8 +21,7 @@ public class UDPReceiver1 implements Runnable {
     @Override
     public void run() {
         try {
-            DatagramSocket socket = null;
-            socket = new DatagramSocket(port);
+            DatagramSocket socket = new DatagramSocket(port);
             byte[] buf = new byte[256];
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
             while (true) {
@@ -33,7 +32,6 @@ public class UDPReceiver1 implements Runnable {
                 if (message.contains("ACK"))
                     parent.setAck();
             }
-        } catch (IOException e) {
-        }
+        } catch (IOException e) {}
     }
 }
